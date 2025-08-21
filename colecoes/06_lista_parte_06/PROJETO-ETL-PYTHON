@@ -1,0 +1,35 @@
+# import requests # > pip install requests
+# import pymysql  # > pip install pymysql
+
+# def banco(sql):
+#     conexao = pymysql.connect(
+#         host='localhost',
+#         database='dbgeral',
+#         user='root',
+#         password='senai@123'
+#     )
+#     cursor = conexao.cursor()
+#     cursor.execute(sql)
+#     conexao.commit()
+#     cursor.close()
+#     conexao.close()
+
+# def carga_regiao():
+
+#     url = 'https://servicodados.ibge.gov.br/api/v1/localidades/regioes'
+
+
+#     response = requests.get(url)
+#     lista = response.json()
+#     i = 0
+#     while i < len(lista):
+#         id = lista[i]['id']
+#         sigla = lista[i]['sigla']
+#         nome = lista[i]['nome']
+#         i = i + 1
+#         banco(f"INSERT INTO produto (id, sigla, nome) VALUES ('{id}', '{sigla}', '{nome}')")
+
+# carga_regiao()
+
+# ------------------ COLOCOU NO PROJETO ERRADO D: ----------------------------
+#  DEIXEI COMENTADO PQ ESTAVA DANDO PROBLEMA PARA TESTAR O MEU PROJETO
